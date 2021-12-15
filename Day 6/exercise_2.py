@@ -20,7 +20,8 @@ def generate_fishes(input_list, days):
                 input_list[count] = 7
                 input_list.append(9)
 
-        input_list = [i - 1 for i in input_list]
+        for count in range(0, len(input_list)):
+            input_list[count] = input_list[count] - 1
 
     # return len(input_list)
     count = 0
